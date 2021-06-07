@@ -4,106 +4,112 @@ namespace App\Entity;
 
 use App\Repository\ProductRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Cocur\Slugify\Slugify;
 
 /**
  * @ORM\Entity(repositoryClass=ProductRepository::class)
  */
 class Product
 {
-    /**
-     * @ORM\Id
-     * @ORM\GeneratedValue
-     * @ORM\Column(type="integer")
-     */
-    private $id;
+	/**
+	 * @ORM\Id
+	 * @ORM\GeneratedValue
+	 * @ORM\Column(type="integer")
+	 */
+	private $id;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $name;
+	/**
+	 * @ORM\Column(type="string", length=255)
+	 */
+	private $name;
 
-    /**
-     * @ORM\Column(type="integer")
-     */
-    private $price;
+	/**
+	 * @ORM\Column(type="integer")
+	 */
+	private $price;
 
-    /**
-     * @ORM\Column(type="integer")
-     */
-    private $old_price;
+	/**
+	 * @ORM\Column(type="integer")
+	 */
+	private $old_price;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $origin;
+	/**
+	 * @ORM\Column(type="string", length=255)
+	 */
+	private $origin;
 
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
-    private $delivery;
+	/**
+	 * @ORM\Column(type="string", length=255, nullable=true)
+	 */
+	private $delivery;
 
-    public function getId(): ?int
-    {
-        return $this->id;
-    }
+	public function getId(): ?int
+	{
+		return $this->id;
+	}
 
-    public function getName(): ?string
-    {
-        return $this->name;
-    }
+	public function getName(): ?string
+	{
+		return $this->name;
+	}
 
-    public function setName(string $name): self
-    {
-        $this->name = $name;
+	public function getSlug(): ?string
+	{
+		return (new Slugify())->slugify($this->name);
+	}
 
-        return $this;
-    }
+	public function setName(string $name): self
+	{
+		$this->name = $name;
 
-    public function getPrice(): ?int
-    {
-        return $this->price;
-    }
+		return $this;
+	}
 
-    public function setPrice(int $price): self
-    {
-        $this->price = $price;
+	public function getPrice(): ?int
+	{
+		return $this->price;
+	}
 
-        return $this;
-    }
+	public function setPrice(int $price): self
+	{
+		$this->price = $price;
 
-    public function getOldPrice(): ?int
-    {
-        return $this->old_price;
-    }
+		return $this;
+	}
 
-    public function setOldPrice(int $old_price): self
-    {
-        $this->old_price = $old_price;
+	public function getOldPrice(): ?int
+	{
+		return $this->old_price;
+	}
 
-        return $this;
-    }
+	public function setOldPrice(int $old_price): self
+	{
+		$this->old_price = $old_price;
 
-    public function getOrigin(): ?string
-    {
-        return $this->origin;
-    }
+		return $this;
+	}
 
-    public function setOrigin(string $origin): self
-    {
-        $this->origin = $origin;
+	public function getOrigin(): ?string
+	{
+		return $this->origin;
+	}
 
-        return $this;
-    }
+	public function setOrigin(string $origin): self
+	{
+		$this->origin = $origin;
 
-    public function getDelivery(): ?string
-    {
-        return $this->delivery;
-    }
+		return $this;
+	}
 
-    public function setDelivery(?string $delivery): self
-    {
-        $this->delivery = $delivery;
+	public function getDelivery(): ?string
+	{
+		return $this->delivery;
+	}
 
-        return $this;
-    }
+	public function setDelivery(?string $delivery): self
+	{
+		$this->delivery = $delivery;
+
+		return $this;
+	}
 }
