@@ -1,67 +1,48 @@
-{% extends 'base.html.twig' %}
+{% extends "base.html.twig" %}
 
-{% block title %}Hello HomeController!
+{% block title %}Bienvenue chez Emma
 {% endblock %}
 
 {% block body %}
-	<div class="container">
-		<div class="d-none d-md-block sticky page-header-element stick top full-width">
-			<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="#">Navbar</a>
-					<form class="d-flex">
-						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-						<button class="btn btn-outline-success" type="submit">Search</button>
+	<header class="nav-header">
+		<div class="nav-header-container">
+			<div class="nav-header-top">
+				<a href="" class="header-logo">
+					<div class="header-logo-container">
+						<img class="header-logo-img" src="https://izidore.com/img/logos/izidore.gif" alt="Logo Izidore">
+					</div>
+				</a>
+				<div class="header-searchbar">
+					<form action="" class="header-form-searchbar">
+						<div
+							class="header-searchbar">
+							{# TODO Vérifier l'utilité du select #}
+							<select
+								name="" id="" class="header-searchbar-select">{# TODO for search in searchbar blabla #}
+							</select>
+							<span>
+								<input type="text">
+							</span>
+							<div class="header-logo-searchbar"></div>
+						</div>
 					</form>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-							<li class="nav-item">
-								<a class="nav-link" href="#">VENDRE</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">WISH</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">CART</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">PROFILE</a>
-							</li>
-						</ul>
-					</div>
 				</div>
-			</nav>
-			<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="margin-top: 60px;">
-				<div class="container-fluid">
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#">Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Nouveautés</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Vide-apparts</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Meubles</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Éléctroménager</a>
-
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Décoration</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Marques</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
+			</div>
+			<div class="nav-header-down"></div>
 		</div>
-		<main></main>
-	</div>
+	</header>
+	<main>
+		{# Container products #}
+		<div class="announce-main-view container-max-width d-lg-flex">
+			<div
+				class="order-lg-2 w-100 px-1 px-sm-3 pl-lg-4 pl-xxl-5 pr-lg-2 pt-3 pt-lg-5">
+				{# Container map.products #}
+				<div class="d-flex stuff-tile-grid align-items-stretch justify-content-between flex-wrap">{# Les produits contenus dans la table Product seront listés ic #}
+					{# {% for product in products %}																																													{% endfor %} #}
+				</div>
+			</div>
+		</div>
+		{# Chez Emma #}
+		<div class="home-presentation order-lg-1 flex-shrink-0"></div>
+	</main>
 {% endblock %}

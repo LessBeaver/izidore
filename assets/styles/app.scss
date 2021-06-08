@@ -1,6 +1,64 @@
-@import "custom";
-@import "~bootstrap/scss/bootstrap";
-
 body {
   background-color: #fff;
+  box-sizing: border-box;
+}
+
+a {
+  color: #29362e;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+img {
+  border-style: none;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+// TODO Séparer les fichiers de style
+
+.nav-header {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: none;
+  z-index: 1000025;
+  /* TODO Enveler la height */
+  height: 100px;
+}
+
+.nav-header-container {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border-bottom: 1px solid #d3d6d4;
+  background-color: #fff;
+  /* TODO Enveler la height */
+  height: 100px;
+}
+
+.nav-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* TODO Enveler la height */
+  height: 70px;
+}
+
+.header-logo {
+  display: inline-block;
+  height: 40px;
+  margin-left: 15px;
+  position: relative;
+  text-decoration: none;
+}
+
+.header-logo-img {
+  height: 40px;
 }

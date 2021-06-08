@@ -1,79 +1,18 @@
+{# templates/base.html.twig #}
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta charset="UTF-8">
-		<title>
-			{% block title %}Welcome!
-			{% endblock %}
-		</title>
 		{% block stylesheets %}
 			{{ encore_entry_link_tags('app') }}
+			<!-- Renders a link tag (if your module requires any CSS)
+																											<link rel="stylesheet" href="/build/app.css"> -->
+			<link rel="stylesheet" href="/build/app.css">
 		{% endblock %}
-	</head>
-	<body>
-		{% block body %}
-			{# <div class="navbar-container container-fluid">
-							<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-								<div class="container-fluid">
-									<a class="navbar-brand" href="#">Navbar</a>
-									<form class="d-flex">
-										<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-										<button class="btn btn-outline-success" type="submit">Search</button>
-									</form>
-									<div class="collapse navbar-collapse" id="navbarSupportedContent">
-										<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-											<li class="nav-item">
-												<a class="nav-link" href="#">VENDRE</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link" href="#">WISH</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link" href="#">CART</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link" href="#">PROFILE</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</nav>
-							<nav class="navbar navbar-expand-lg navbar-light bg-light">
-								<div class="container-fluid">
-									<div class="collapse navbar-collapse" id="navbarSupportedContent">
-										<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-											<li class="nav-item">
-												<a class="nav-link active" aria-current="page" href="#">Home</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link" href="#">Nouveautés</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link" href="#">Vide-apparts</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link" href="#">Meubles</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link" href="#">Éléctroménager</a>
-			
-											</li>
-											<li class="nav-item">
-												<a class="nav-link" href="#">Décoration</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link" href="#">Marques</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</nav>
-						</div> #}
-		{% endblock %}
+		{% block body %}{% endblock body %}
 		{% block javascripts %}
 			{{ encore_entry_script_tags('app') }}
+			<script src="/build/runtime.js" defer></script>
+			<script src="/build/app.js" defer></script>
 		{% endblock %}
-	</body>
+	</head>
 </html>
