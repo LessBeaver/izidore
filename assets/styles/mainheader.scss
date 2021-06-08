@@ -2,10 +2,6 @@
   display: block;
 }
 
-.announce-cover-image {
-  background-image: url("https://izidore-production-bucket.s3.eu-west-3.amazonaws.com/media/cache/announce_cover_picture_XL/6f6c5f5ee0ce232670c4aa3e1b249514.jpeg");
-}
-
 .announce-header {
   color: #fff;
   position: absolute;
@@ -136,4 +132,53 @@
 .share-text {
   padding-left: 7.5px;
   font-family: "Poppins-SemiBold";
+}
+
+.announce-header-cover {
+  position: relative;
+  margin-left: -15px;
+  margin-right: -15px;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.cover-blur-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  // TODO Enlever height
+  // height: 250px;
+}
+
+.blur-image {
+  width: 100%;
+  height: 100%;
+}
+
+.announce-cover-image {
+  background-image: url("https://izidore-production-bucket.s3.eu-west-3.amazonaws.com/media/cache/announce_cover_picture_XL/6f6c5f5ee0ce232670c4aa3e1b249514.jpeg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  margin: auto;
+  width: 75%;
+  max-width: 1200px;
+  min-width: auto;
+  height: 50vh;
+  text-align: center;
+}
+
+.shadow {
+  pointer-events: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(180deg, transparent 90%, rgba(0, 0, 0, 0.05));
+  box-shadow: 0 0.5rem 1rem rgba(41, 54, 46, 0.15) !important;
 }
