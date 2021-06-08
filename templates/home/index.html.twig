@@ -1,97 +1,60 @@
 {% extends "base.html.twig" %}
 
-{% block title %}Bienvenue chez Emma
+{% block title %}Le vide-appart de Emma à Junhac | izidore
 {% endblock %}
 
 {% block body %}
-	<header class="nav-header">
-		<div class="nav-header-container">
-			<div class="nav-header-top">
-				<a href="" class="header-logo">
-					<div class="header-logo-container">
-						<img class="header-logo-img cursor" src="https://izidore.com/img/logos/izidore.gif" alt="Logo Izidore">
+	<main>
+		<header>
+
+			<div class="announce-header">
+				<div class="announce-header-container">
+
+					<div>
+						<a
+							href="https://izidore.com/catalogue/vide-apparts#5fe0882040b8b">{# TODO mettre flèche en bg : https://izidore.com/dist/images/arrow-left-green.656ad84f.svg #}
+						</a>
+
+						<h1 class="announce-header-title">
+							<span>
+								{# TODO Créer un effet de surbrillance #}
+								<span></span>
+							</span>
+							<span class="announce-header-title">
+								<span>BIENVENUE</span>
+								{# TODO Récupérer nom en bdd #}
+								<span>CHEZ EMMA</span>
+							</span>
+						</h1>
+
 					</div>
-				</a>
-				<div class="header-searchbar">
-					<form action="" class="header-form-searchbar">
-						<div class="header-form-searchbar-div">
-							<input type="text" class="header-form-searchbar-input">
+
+					<div>
+						<div class="wishlist indicator">
+							<span>
+								{# TODO Counter #}
+							</span>
 						</div>
-						<div class="header-logo-searchbar"></div>
-					</form>
-				</div>
-				<div class="header-links">
-					<nav class="header-links-container">
-						<ul>
-							<li>
-								<a href="https://izidore.com/vide-appart-creation" class="btn btn-square green-btn cursor">Vendre</a>
-							</li>
-							<li>
-								<div class="wishlist indicator cursor"></div>
-							</li>
-							<li>
-								<div class="cart indicator cursor"></div>
-							</li>
-							<li>
-								<a href="#">
-									<img src="https://izidore.com/img/icons/user.svg" alt="" class="indicator cursor">
-								</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-			<div class="nav-header-down">
-				<div class="nav-header-down-links">
-					<nav class="header-links-container">
-						<div class="nav-items-container">
-							<div class="nav-items-new">
-								<a href="https://izidore.com/catalogue?type=new">NOUVEAUTÉS</a>
-							</div>
-							<div class="nav-items">
-								<span>VIDE-APPARTS</span>
-							</div>
-							<div class="nav-items">
-								<span>MEUBLES</span>
-							</div>
-							<div class="nav-items">
-								<span>ÉLECTROMÉNAGER</span>
-							</div>
-							<div class="nav-items">
-								<span>DÉCORATION</span>
-							</div>
-							<div class="nav-items">
-								<span>MARQUES</span>
-							</div>
-						</div>
-						<div class="nav-items-container">
-							<div class="nav-items">
-								<span>COMMENT ÇA MARCHE ?</span>
-							</div>
-							<div class="nav-items">
-								<span>CONSEILS</span>
-							</div>
-							<div class="nav-items">
-								<span>BLOG</span>
-							</div>
+						<div class="share">
+							<img src="https://izidore.com/img/icons/send.svg" alt="" class="share-logo">
+							<p>Envoyer à un ami</p>
 						</div>
 					</div>
-				</nav>
+
+				</div>
 			</div>
-		</div>
-	</div>
-</header>
-<main>
-	{# Container products #}
-	<div class="announce-main-view container-max-width d-lg-flex">
-		<div
-			class="order-lg-2 w-100 px-1 px-sm-3 pl-lg-4 pl-xxl-5 pr-lg-2 pt-3 pt-lg-5">
-			{# Container map.products #}
-			<div class="d-flex stuff-tile-grid align-items-stretch justify-content-between flex-wrap">{# Les produits contenus dans la table Product seront listés ic #}
-				{# {% for product in products %}																																													{% endfor %} #}
+
+			<div class="announce-cover">
+				<div class="announce-cover-blur-image">
+					<img src="https://izidore-production-bucket.s3.eu-west-3.amazonaws.com/media/cache/announce_cover_picture_blur/6f6c5f5ee0ce232670c4aa3e1b249514.jpeg">
+				</div>
+				<div class="announce-cover-image">{# TODO Mettre en bg : https://izidore-production-bucket.s3.eu-west-3.amazonaws.com/media/cache/announce_cover_picture_XL/6f6c5f5ee0ce232670c4aa3e1b249514.jpeg #}
+					{# TODO Stocker puis récupérer en bdd #}
+				</div>
+				<div class="shadow"></div>
 			</div>
-		</div>
-	</div>
-	{# Chez Emma #}
-	<div class="home-presentation order-lg-1 flex-shrink-0"></div>
-</main>{% endblock %}
+
+			<div class="main-"></div>
+		</header>
+	</main>
+{% endblock %}

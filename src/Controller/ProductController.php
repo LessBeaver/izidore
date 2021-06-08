@@ -27,10 +27,20 @@ class ProductController extends AbstractController
         $this->em = $em;
     }
     /**
-     * @Route("/home", name="home")
+     * @Route("/", name="home")
      * @return Response
      */
     public function index(): Response
+    {
+        return $this->render('base.html.twig', [
+            'controller_name' => 'ProductController',
+        ]);
+    }
+
+    /**
+     * @return Response
+     */
+    public function productIndex(): Response
     {
         // Permet de récupérer l'ensemble des enregistrements
         $products = $this->repository->findAll();
