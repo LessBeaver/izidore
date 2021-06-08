@@ -15,6 +15,11 @@ ul {
   margin: 0;
 }
 
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 img {
   border-style: none;
 }
@@ -40,6 +45,15 @@ li .img {
 
 nav {
   display: block;
+}
+
+h1,
+.h1 {
+  margin-bottom: 0;
+  // TODO importer font-family
+  // font-family: "Poppins-Bold";
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .btn {

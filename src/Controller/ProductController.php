@@ -11,41 +11,32 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class ProductController extends AbstractController
 {
-    /**
-     * @var ProductRepository
-     */
-    private $repository;
+	/**
+	 * @var ProductRepository
+	 */
+	private $repository;
 
-    /**
-     * @var EntityManagerInterface
-     */
-    private $em;
+	/**
+	 * @var EntityManagerInterface
+	 */
+	private $em;
 
-    public function __construct(ProductRepository $repository, EntityManagerInterface $em)
-    {
-        $this->repository = $repository;
-        $this->em = $em;
-    }
-    /**
-     * @Route("/", name="home")
-     * @return Response
-     */
-    public function index(): Response
-    {
-        return $this->render('base.html.twig', [
-            'controller_name' => 'ProductController',
-        ]);
-    }
-
-    /**
-     * @return Response
-     */
-    public function productIndex(): Response
-    {
-        // Permet de récupérer l'ensemble des enregistrements
-        $products = $this->repository->findAll();
-        return $this->render('home/index.html.twig', [
-            'controller_name' => 'ProductController',
-        ]);
-    }
+	public function __construct(ProductRepository $repository, EntityManagerInterface $em)
+	{
+		$this->repository = $repository;
+		$this->em = $em;
+	}
+	/**
+	 * @Route("/", name="home")
+	 * @return Response
+	 */
+	public function index(): Response
+	{
+		// TODO envoyer index plutôt que base
+		// Permet de récupérer l'ensemble des enregistrements
+		$products = $this->repository->findAll();
+		return $this->render('base.html.twig', [
+			'controller_name' => 'ProductController',
+		]);
+	}
 }

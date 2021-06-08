@@ -1,0 +1,139 @@
+.header-bg {
+  display: block;
+}
+
+.announce-cover-image {
+  background-image: url("https://izidore-production-bucket.s3.eu-west-3.amazonaws.com/media/cache/announce_cover_picture_XL/6f6c5f5ee0ce232670c4aa3e1b249514.jpeg");
+}
+
+.announce-header {
+  color: #fff;
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  left: 0;
+  background: #000;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 15%, transparent 80%);
+  padding: 30px 15px 60px;
+}
+
+.announce-header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1600px;
+  margin: auto;
+  align-items: center;
+}
+
+.announce {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.arrow-left {
+  background: #fff
+    url("https://izidore.com/dist/images/arrow-left-green.656ad84f.svg");
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 3px #939995;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: auto 60%;
+}
+
+.announce-title {
+  font-size: 1.75rem;
+  // TODO Créer une classe font-white
+  color: #fff;
+  margin-right: 30px;
+  margin-top: 0;
+}
+
+.announce-title-container-light {
+  position: relative;
+  // TODO normalement hérite de Body
+  text-align: left;
+}
+
+.light {
+  background-color: #81c7a9;
+  opacity: 0.2;
+  position: absolute;
+  bottom: 0;
+  right: -10px;
+  left: 10px;
+  top: 60%;
+}
+
+.announce-title-container {
+  position: relative;
+  font-family: "Poppins-SemiBold";
+  color: #fff;
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.2;
+  // TODO normalement hérite de Body
+  text-align: left;
+}
+
+// TODO définir title dans les autres classes car répétition
+.title {
+  font-family: "Poppins-SemiBold";
+  color: #fff;
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.announce-indicator {
+  display: flex;
+  align-self: auto;
+  align-items: center;
+  font-size: 0.85rem;
+  margin-top: 0;
+  color: #fff;
+}
+
+.wishlist-container {
+  box-shadow: 0 13px 27px -5px rgba(147, 153, 149, 0.4),
+    0 8px 16px -8px rgba(211, 214, 212, 0.9);
+  margin-right: 30px;
+  padding: 7.5px 7.5px 7.5px 15px;
+  border-radius: 2.5rem;
+  background-color: #fff;
+}
+
+.wishlist-logo {
+  background-image: url("https://izidore.com/dist/images/heart-grey.f568b258.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  text-align: center;
+  font-family: Poppins-SemiBold;
+  font-size: 0.75rem;
+  width: 37.5px;
+  padding-left: 15px;
+  padding-top: 0;
+  background-position: 0 0;
+  color: #a9aeab;
+}
+
+.share {
+  display: flex;
+  position: relative;
+  font-size: 0.85rem;
+  color: #fff;
+}
+
+.share-logo {
+  filter: invert(1);
+  height: 20px;
+}
+
+.share-text {
+  padding-left: 7.5px;
+  font-family: "Poppins-SemiBold";
+}

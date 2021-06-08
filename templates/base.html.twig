@@ -1,4 +1,3 @@
-{# templates/base.html.twig #}
 <!DOCTYPE html>
 <html>
 	<head>
@@ -12,7 +11,7 @@
 			<script src="/build/app.js" defer></script>
 		{% endblock %}
 	</head>
-	{% block body %}
+	<body>
 		<header class="nav-header">
 			<div class="nav-header-container">
 				<div class="nav-header-top">
@@ -89,5 +88,53 @@
 				</div>
 			</div>
 		</header>
-	{% endblock body %}
+
+		<main>
+			<header class="header-bg">
+				<div class="announce-header">
+					<div class="announce-header-container">
+						<div class="announce">
+							<a href="https://izidore.com/catalogue/vide-apparts#5fe0882040b8b" class="arrow-left cursor"></a>
+
+							<h1 class="announce-title">
+								<span
+									class="announce-title-container-light h1">
+									{# TODO Créer un effet de surbrillance #}
+									<span class="light h1"></span>
+								</span>
+								<span class="announce-title-container">
+									<span class="title">BIENVENUE</span>
+									{# TODO Récupérer nom en bdd #}
+									<span class="title">CHEZ EMMA</span>
+								</span>
+							</h1>
+						</div>
+						<div class="announce-indicator">
+							<div class="wishlist-container">
+								<div class="wishlist-logo cursor">
+									<span>
+										{# TODO Counter #}
+										10
+									</span>
+								</div>
+							</div>
+							<div class="share">
+								<img src="https://izidore.com/img/icons/send.svg" alt="" class="share-logo cursor">
+								<p class="share-text cursor">Envoyer à un ami</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="announce-cover">
+					<div class="announce-cover-blur-image">
+						<img src="https://izidore-production-bucket.s3.eu-west-3.amazonaws.com/media/cache/announce_cover_picture_blur/6f6c5f5ee0ce232670c4aa3e1b249514.jpeg">
+					</div>
+					<div class="announce-cover-image">{# TODO Mettre en bg : https://izidore-production-bucket.s3.eu-west-3.amazonaws.com/media/cache/announce_cover_picture_XL/6f6c5f5ee0ce232670c4aa3e1b249514.jpeg #}
+						{# TODO Stocker puis récupérer en bdd #}
+					</div>
+					<div class="shadow"></div>
+				</div>
+			</header>
+		</main>
+	</body>
 </html>
