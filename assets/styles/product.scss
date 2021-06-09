@@ -50,6 +50,27 @@
   overflow-y: visible;
 }
 
+.slider-slide-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.slider-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.7;
+  background-color: #fff;
+  text-align: center;
+  z-index: 1;
+}
+
 .slider-slides {
   list-style: none;
   padding: 0;
@@ -73,6 +94,13 @@
   padding: 0;
 }
 
+.slide-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
 .slider-slide-blur {
   position: absolute;
   top: 0;
@@ -85,6 +113,18 @@
   width: 100%;
   height: 100%;
   display: inline-block;
+}
+
+.products-blur-image:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.3;
 }
 
 .products-image {
@@ -161,12 +201,6 @@
   margin: 0;
 }
 
-.cart {
-  display: inline-block;
-  height: 100%;
-  width: auto;
-}
-
 // PRODUCTS DELIVERY
 
 .products-delivery-container {
@@ -180,191 +214,4 @@
   padding: 3.75px 7.5px;
   font-size: 0.75rem;
   border-radius: 0.25rem !important;
-}
-
-// SIDEBAR
-.side-view-user-container {
-  margin-top: -60px;
-  flex-shrink: 0 !important;
-  order: 1;
-}
-
-.side-view-user {
-  position: relative;
-  min-height: 350px;
-  max-height: 732.4px;
-  box-shadow: 0 13px 27px -5px rgba(169, 174, 171, 0.6),
-    0 8px 16px -8px rgba(211, 214, 212, 0.9);
-  background-color: #f7f7f7;
-}
-
-.side-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #d6e3d8;
-  padding: 7.5px;
-}
-
-.side-locator {
-  height: 30px;
-  border-style: none;
-  margin-right: 15px;
-}
-
-.side-location {
-  // TODO Mettre ces 3 propriétés dans une classe réutilisable
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.location {
-  font-family: "Poppins-SemiBold";
-}
-
-.side-info-user {
-  margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.side-user-logo {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-
-.user-logo {
-  min-width: 100%;
-  height: auto;
-}
-
-.side-user-info-container {
-  padding-left: 15px;
-  flex: 1 1 auto;
-}
-
-.user-info {
-  line-height: 1;
-  color: #58b58d;
-  font-style: 1.5rem;
-  font-family: "Poppins-SemiBold";
-}
-
-.side-furnitures-container,
-.side-pref-container {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 30px;
-  width: 100%;
-}
-
-.side-furnitures-info,
-.side-pref-info {
-  display: flex;
-  align-items: center;
-  margin-top: 7.5px 0 30px 0;
-}
-
-.side-logo {
-  color: #58b58d;
-  font-style: 1.5rem;
-  width: 30px;
-  text-align: center;
-  flex-shrink: 0;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  text-rendering: auto;
-}
-
-.side-furnitures-info p {
-  // TODO Valeur de propriété invalide
-  font-style: 0.75rem;
-  padding-left: 15px;
-}
-
-// TODO Mettre dans app.scss
-.pd-l2 {
-  padding-left: 15px;
-}
-
-// TODO Rassembler les classe similaires
-.flex-wrap-start-center {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  text-align: center;
-}
-
-// TODO Mettre dans app.scss
-.small-text {
-  font-size: 0.75rem;
-  margin-right: 7.5px;
-}
-
-// TODO Mettre dans app.scss
-.small-bold {
-  font-size: 0.75rem;
-  font-family: "Poppins-SemiBold";
-}
-
-.side-description-container {
-  text-align: justify;
-  border-bottom: 0.5px solid #e5e6e6;
-  border-top: 0.5px solid #e5e6e6;
-  padding-left: 15px 0;
-}
-
-.flex-btw-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.a-description {
-  color: inherit;
-  text-decoration: none;
-}
-
-.side-contact-container {
-  margin-top: 15px;
-  margin-bottom: 0;
-}
-
-.tabbar {
-  display: flex;
-  width: 100%;
-  position: static;
-}
-
-.tabbar-btn {
-  display: block;
-  width: 100%;
-  height: 35px;
-  line-height: 31px;
-  padding: 0 17.5px;
-  font-size: 0.875rem;
-  flex: 1 1 100%;
-  border-radius: 4px;
-  outline: none;
-  text-align: center;
-  // TODO check .btn dans app.scss
-  -webkit-appearance: none;
-  border: 1px solid;
-  cursor: pointer;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-family: "Poppins-SemiBold";
-  box-shadow: 1px 1px 3px #f7f7f7;
-}
-
-.side-view-map {
-  position: relative;
-  overflow: hidden;
 }

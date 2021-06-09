@@ -42,9 +42,10 @@
 									<div class="wishlist indicator cursor"></div>
 								</li>
 								<li>
-									<div class="cart indicator cursor"></div>
+									<img src="https://izidore.com/img/icons/cart.svg" alt="" class="cart indicator cursor">
 								</li>
 								<li>
+									{# TODO Finir logo profile #}
 									<a href="#">
 										<img src="https://izidore.com/img/icons/user.svg" alt="" class="indicator cursor">
 									</a>
@@ -158,19 +159,25 @@
 										<div
 											class="products-slider-image">
 											{# TODO Enlever overlay ? #}
-											<div class="slide-overlay"></div>
 
-											<ul class="slider-slides">
-												<li
-													class="slider-slide">
-													{# TODO Enlever overlay ? #}
-													<div class="slide-overlay"></div>
-													<div class="slider-slide-blur">
-														<img src={{ product.image }} alt="" class="products-blur-image">
-													</div>
-													<img src={{ product.imageBlur }} alt="" class="products-image">
-												</li>
-											</ul>
+											<div class="slider-slide-container">
+												<div
+													class="slider-overlay">{# TODO A compléter #}
+												</div>
+												<ul class="slider-slides">
+													<li
+														class="slider-slide">
+														{# TODO Enlever overlay ? #}
+														<div class="slide-overlay"></div>
+														<div class="slide-image">
+															<div class="slider-slide-blur">
+																<img src={{ product.imageBlur }} alt="" class="products-blur-image">
+															</div>
+															<img src={{ product.image }} alt="" class="products-image">
+														</div>
+													</li>
+												</ul>
+											</div>
 										</div>
 										<p class="products-name">{{product.name}}</p>
 									</div>
@@ -210,6 +217,7 @@
 					</div>
 				</div>
 
+				{# MAIN SIDEBAR #}
 				<div class="side-view-user-container">
 					<div class="side-view-user">
 						<div class="side-container">
@@ -220,20 +228,33 @@
 								<p class="location">Junhac, 15120</p>
 							</div>
 						</div>
-
 						<div class="side-info-user-container">
 							<div class="side-info">
 								<div class="side-user-logo">
 									<img src="https://izidore-production-bucket.s3.eu-west-3.amazonaws.com/media/cache/profile_picture/402bf820e579b75dacb379f4303f5ab0.png" alt="" class="user-logo">
 								</div>
-
 								<div class="side-user-info-container">
 									<div class="side-user-info">
 										<div class="user-info">Emma</div>
+										<div
+											class="side-user-notification">
+											{# TODO Implémenter une boucle for #}
+											<i class="fa-regular fa-star rating-star"></i>
+											<i class="fa-regular fa-star rating-star"></i>
+											<i class="fa-regular fa-star rating-star"></i>
+											<i class="fa-regular fa-star rating-star"></i>
+											<i class="fa-regular fa-star rating-star"></i>
+										</div>
+									</div>
+									{# AVIS #}
+									<div class="side-user-notification-container">
+										<div class="add-notification-container">
+											Voir les avis
+											<i class="fas fa-chevron-down small-arrow-down"></i>
+										</div>
 									</div>
 								</div>
 							</div>
-
 							<div class="side-furnitures-container">
 								<p>Meubles descendus</p>
 								<div class="side-furnitures-info">
@@ -243,7 +264,6 @@
 									</p>
 								</div>
 							</div>
-
 							<div class="side-pref-container">
 								<p>Préférences de retrait</p>
 								<div class="side-pref-info">
@@ -260,34 +280,32 @@
 									</div>
 								</div>
 							</div>
-
 							<div class="side-description-container">
 								<a
 									href="" class="flex-btw-center a-description cursor">
 									{# TODO onclick -> dropdown #}
 									<p>Description</p>
-									<i class="fas fa-chevron-down small-arrow-down cursor"></i>
+									<i class="fas fa-chevron-down small-arrow-down "></i>
 								</a>
 							</div>
-
 							<div class="side-contact-container">
 								<div class="tabbar">
 									<a href="" class="green-btn tabbar-btn">ENTRER EN CONTACT</a>
 								</div>
 							</div>
 						</div>
-
-						<div class="side-view-map">
+						<div
+							class="side-view-map">
+							{# TODO Mettre image maps : https://zupimages.net/viewer.php?id=21/23/jv1e.png #}
 							<div>{# TODO Importer iFrame #}
 								{# Google Maps Platform API #}
 								{# <iframe src="https://www.google.com/maps/embed/v1/view?key=AIzaSyCvB_0KcGfe-UEcXI9HXdZOUA7lcNvKW7A&center=44.7130784,2.4532195&maptype=roadmap&zoom=15&language=fr" frameborder="0"></iframe> #}
 							</div>
 						</div>
-
 					</div>
 				</div>
 			</div>
 			{# MAIN BODY #}
 		</body>
 	</body>
-</html></body></html></main></body></html>
+</html>

@@ -1,14 +1,11 @@
 // TODO RESPONSIVE !!!!!!!!!!!!!!!!!!!!!!!!!!
 
 body {
+  font-family: "RobotoSlab";
   background-color: #fff;
   margin: 0;
   box-sizing: border-box;
   width: 100%;
-}
-
-.body {
-  font-family: "RobotoSlab-Light";
   font-size: 0.95rem;
   font-weight: 400;
   line-height: 1.5;
@@ -19,6 +16,7 @@ body {
 }
 
 a {
+  font-family: "RobotoSlab";
   color: #29362e;
   background-color: transparent;
   text-decoration: none;
@@ -65,7 +63,7 @@ nav {
 h1,
 .h1 {
   margin-bottom: 0;
-  font-family: "Poppins-Bold";
+  font-family: "Poppins";
   font-weight: 500;
   line-height: 1.2;
 }
@@ -78,7 +76,7 @@ h1,
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-family: "Poppins-SemiBold";
+  font-family: "Poppins";
   box-shadow: 1px 1px 3px #f7f7f7;
 }
 
