@@ -1,0 +1,39 @@
+@media screen and (min-width: 768px) {
+  .side-info-user-container {
+    padding: 30px;
+  }
+
+  .side-view-map {
+    height: 250px;
+    background-color: #f7f7f7;
+  }
+}
+
+@media screen and (min-width: 992) {
+  .side-view-user {
+    margin-top: 75px;
+  }
+
+  .side-container {
+    padding: 15px 7.5px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .side-view-user {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .side-view-user-container {
+    margin: 0 -15px !important;
+    padding: 0;
+    width: calc(100% + 30px);
+    max-width: calc(100% + 30px);
+  }
+
+  .side-info-user {
+    justify-content: left;
+  }
+}

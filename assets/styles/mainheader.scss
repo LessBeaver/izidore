@@ -108,7 +108,7 @@
   background-size: contain;
   display: block;
   text-align: center;
-  font-family: Poppins-SemiBold;
+  font-family: "Poppins-SemiBold";
   font-size: 0.75rem;
   width: 37.5px;
   padding-left: 15px;
@@ -136,8 +136,6 @@
 
 .announce-header-cover {
   position: relative;
-  margin-left: -15px;
-  margin-right: -15px;
   text-align: center;
   display: block;
   width: 100%;
@@ -150,8 +148,6 @@
   left: 0;
   right: 0;
   z-index: -1;
-  // TODO Enlever height
-  // height: 250px;
 }
 
 .blur-image {
