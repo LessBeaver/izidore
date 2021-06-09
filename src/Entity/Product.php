@@ -43,6 +43,16 @@ class Product
 	 */
 	private $delivery;
 
+	/**
+	 * @ORM\Column(type="string", length=600)
+	 */
+	private $image;
+
+	/**
+	 * @ORM\Column(type="string", length=600)
+	 */
+	private $image_blur;
+
 	public function getId(): ?int
 	{
 		return $this->id;
@@ -109,6 +119,30 @@ class Product
 	public function setDelivery(?string $delivery): self
 	{
 		$this->delivery = $delivery;
+
+		return $this;
+	}
+
+	public function getImage(): ?string
+	{
+		return $this->image;
+	}
+
+	public function setImage(string $image): self
+	{
+		$this->image = $image;
+
+		return $this;
+	}
+
+	public function getImageBlur(): ?string
+	{
+		return $this->image_blur;
+	}
+
+	public function setImageBlur(string $image_blur): self
+	{
+		$this->image_blur = $image_blur;
 
 		return $this;
 	}

@@ -92,6 +92,20 @@ h1,
   color: #fff;
 }
 
+.yellow-btn {
+  -webkit-appearance: none;
+  border: 2px solid #ffd932;
+  background-color: #ffd932;
+  color: #29362e;
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Poppins-SemiBold;
+  box-shadow: 1px 1px 3px #f7f7f7;
+}
+
 .indicator {
   height: 23px;
   width: 23px;

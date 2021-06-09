@@ -33,14 +33,9 @@ class ProductController extends AbstractController
 	public function index(): Response
 	{
 		// TODO envoyer index plutôt que base
-		// Permet de récupérer l'ensemble des enregistrements
 		$products = $this->repository->findAll();
 		return $this->render('base.html.twig', [
-			'controller_name' => 'ProductController',
+			'products' => $products,
 		]);
-	}
-
-	public function show(): Response
-	{
 	}
 }

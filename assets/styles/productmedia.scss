@@ -1,4 +1,15 @@
+@media screen and (min-width: 576px) {
+  .main-view-products-container {
+    padding: 0 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .products-card {
+    width: 47.5%;
+  }
+
+  // SIDE MENU
   .side-info-user-container {
     padding: 30px;
   }
@@ -9,7 +20,12 @@
   }
 }
 
-@media screen and (min-width: 992) {
+@media screen and (min-width: 992px) {
+  .main-view-products-container {
+    padding: 90px 15px 0 45px;
+    order: 2;
+  }
+
   .side-view-user {
     margin-top: 75px;
   }

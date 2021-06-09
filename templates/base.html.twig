@@ -141,16 +141,70 @@
 			</header>
 
 			{# MAIN BODY #}
-			<div class="main-view-container">
-				<div class="view-products">
-					<div class="products">
-						{% for product in products %}
-							<div class="product-card">
-								<a href="" class="product-card-top">
+			<div
+				class="main-view-container">
+				{# Container de tous les produits #}
+				<div class="main-view-products-container">
+					{# Render de tous les produits #}
+
+					{# TODO Récupérer les images + liens #}
+						<div class="products-container"> {% for product in products %}
+							{# Card produit #}
+							<div class="products-card">
+								<a href="" class="products-card-image-container">
 									<div
-										class="product-image">{# TODO Récupérer image #}
+										class="products-image-container">
+										{# TODO Récupérer image #}
+										<div
+											class="products-slider-image">
+											{# TODO Enlever overlay ? #}
+											<div class="slide-overlay"></div>
+
+											<ul class="slider-slides">
+												<li
+													class="slider-slide">
+													{# TODO Enlever overlay ? #}
+													<div class="slide-overlay"></div>
+													<div class="slider-slide-blur">
+														<img src={{ product.image }} alt="" class="products-blur-image">
+													</div>
+													<img src={{ product.imageBlur }} alt="" class="products-image">
+												</li>
+											</ul>
+										</div>
+										<p class="products-name">{{product.name}}</p>
 									</div>
 								</a>
+
+								<div class="products-stuff-container">
+									<a href="#" class="products-stuff" title="Plus d'infos sur le produit">
+
+										<div class="products-price-container">
+											<span class="products-price">{{product.price}}€</span>
+											<span class="products-old-price">{{product.oldPrice}}€</span>
+										</div>
+
+										<div class="products-origin-container">
+											<span class="products-origin">{{product.origin}}</span>
+										</div>
+									</a>
+
+									<div class="products-cart-container">
+										<button
+											class="products-cart cursor yellow-btn">
+											{# TODO Définir class bouton jaune #}
+											<img src="https://izidore.com/img/icons/cart.svg" alt="" class="cart indicator cursor">
+										</button>
+									</div>
+								</div>
+
+								{% if product.delivery == 'Mondial Relay' %}
+									<div class="products-delivery-container">
+										<div class="products-delivery" data-original-title="<span class='text-small'>La livraison Mondial Relay est disponible sur cet article !</span>">🚚
+											{{product.delivery}}</div>
+									</div>
+								{% endif %}
+								{# Description produits #}
 							</div>
 						{% endfor %}
 					</div>
@@ -236,4 +290,4 @@
 			{# MAIN BODY #}
 		</body>
 	</body>
-</html></main></body></html>
+</html></body></html></main></body></html>
