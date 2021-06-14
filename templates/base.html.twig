@@ -14,6 +14,7 @@
 			<script src="/build/app.js" defer></script>
 		{% endblock %}
 	</head>
+
 	<body>
 		{# HEADER #}
 		<header class="nav-header">
@@ -26,15 +27,29 @@
 							<img class="header-logo-img cursor" src="https://izidore.com/img/logos/izidore.gif" alt="Logo Izidore">
 						</div>
 					</a>
-					{# SEARCHBAR #}
-					<div class="header-searchbar">
-						<form action="" class="header-form-searchbar">
-							<div class="header-form-searchbar-div">
-								<input type="text" class="header-form-searchbar-input">
+					<div class="header-searchbar-container">
+						<form action="" class="form-searchbar-container">
+							<div class="form-searchbar">
+								<span class="form-searchbar-below-container">
+									<span class="form-searchbar-below">
+										<span class="searchbar-selection">
+											<ul>
+												<li>
+													{# <input type="text" class="searchbar-below"> #}
+													<input type="text" class="searchbar-input" placeholder="Quel produit vous ferait plaisir ?">
+												</li>
+											</ul>
+										</span>
+									</span>
+								</span>
+								{# <input type="text" class="header-form-searchbar-input" placeholder="Quel produit vous ferait plaisir ?"> #}
 							</div>
-							<div class="header-logo-searchbar"></div>
+							<div class="logo-searchbar yellow-btn">
+								<i class="fa fa-search text-bigger"></i>
+							</div>
 						</form>
 					</div>
+
 					<div class="header-links">
 						<nav class="header-links-container">
 							<ul>
@@ -57,6 +72,7 @@
 						</nav>
 					</div>
 				</div>
+
 				<div class="nav-header-down">
 					<div class="nav-header-down-links">
 						<nav class="header-links-container">
@@ -311,4 +327,4 @@
 			{# MAIN BODY #}
 		</body>
 	</body>
-</html>
+</html></body></html>

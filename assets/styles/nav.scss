@@ -14,13 +14,6 @@
 
 .nav-header-container {
   position: relative;
-  display: block;
-  width: 100%;
-  padding: 0;
-  border-bottom: 1px solid #d3d6d4;
-  background-color: #fff;
-  /* TODO Enveler la height */
-  height: 100px;
 }
 
 // TODO Header TOP
@@ -29,9 +22,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* TODO Enveler la height */
-  height: 70px;
-  border-bottom: 1px solid black;
+  // /* TODO Enveler la height */
+  // height: 70px;
+  // border-bottom: 1px solid black;
 }
 
 .header-logo {
@@ -46,7 +39,8 @@
   height: 40px;
 }
 
-.header-searchbar {
+// SEARCHBAR
+.header-searchbar-container {
   display: flex;
   flex: 1;
   justify-content: center;
@@ -54,38 +48,118 @@
   height: 60px;
   overflow: auto;
   float: right;
-  margin-bottom: 0;
-  position: relative;
+  // margin-bottom: 0;
+  // position: relative;
 }
 
-.header-form-searchbar {
+.form-searchbar-container {
+  display: flex;
+  justify-content: flex-end;
   width: 85%;
   max-width: 600px;
   margin-top: -1px;
 }
 
-.header-form-searchbar-div {
-  display: inline-block;
+// TODO Comparer/Supprimer
+// .form-searchbar {
+//   display: inline-block;
+//   position: relative;
+//   vertical-align: middle;
+//   box-sizing: border-box;
+//   max-width: 0;
+//   width: 100%;
+// }
+
+.form-searchbar {
+  margin-bottom: 0;
   position: relative;
-  vertical-align: middle;
-  box-sizing: border-box;
-  max-width: 0;
-  width: 100%;
+  border-radius: 22.5px;
+  padding-right: 43px;
 }
 
-.header-form-searchbar-input {
-  border-radius: 2px;
+.form-searchbar-below-container {
+  width: 100%;
+  // TODO Créer une classe select
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  vertical-align: middle;
+}
+
+.searchbar-selection {
+  border-radius: 22.5px !important;
   padding-right: 43px;
-  background-color: #f7f7f7;
+  cursor: text;
   display: block;
   width: 100%;
+  padding: 0 11.25px;
+  background: #fff;
   border: 1px solid #e5e6e6;
+  border-radius: 4px;
   font-size: 0.95rem;
+  font-family: RobotoSlab-Regular;
   height: auto;
   min-height: 45px;
   line-height: 1;
-  font-family: "RobotoSlab";
-  // padding: 0 11.25px;
+}
+
+// TODO A revoir -> placeholder
+.searchbar-selection ul {
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow: auto;
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0 5px;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.searchbar-selection ul li {
+  max-width: 100%;
+  list-style: none;
+  float: left;
+  white-space: nowrap;
+}
+
+.searchbar-input {
+  width: 543.75px;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  border-radius: 22.5px;
+  margin-top: 0;
+  line-height: 43px;
+  background: transparent;
+  border: none;
+  outline: 0;
+  box-shadow: none;
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+.logo-searchbar {
+  height: 45px;
+  line-height: 43px;
+  position: absolute;
+  box-shadow: 0 13px 27px -5px hsla(180, 2%, 90%, 0.01),
+    0 8px 16px -8px rgba(211, 214, 212, 0.5);
+  outline: none;
+  // display: flex;
+  // align-items: center;
+}
+
+.logo-searchbar i {
+  font-size: 1.5rem;
+  display: inline-block;
+  font: normal normal normal 14px/1 "FontAwesome";
+  text-rendering: auto;
 }
 
 .header-links {
