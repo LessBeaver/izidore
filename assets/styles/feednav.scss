@@ -1,0 +1,88 @@
+// Navbar top
+.feed-header-container {
+  z-index: 1000025;
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: none;
+}
+
+.feed-header {
+  display: block;
+  position: relative;
+}
+
+.news-container {
+  height: 34px;
+  max-height: 34px;
+  background: #58b58d;
+  color: #fff;
+  padding: 7px;
+  text-align: center;
+  width: 100%;
+  line-height: 20px;
+  font-size: 0.75rem;
+  font-family: "Poppins";
+  font-weight: bold;
+  position: relative;
+}
+
+.news-slider p {
+  transform: translateY(-50px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.news-slider * {
+  width: 100%;
+  text-align: center;
+  -webkit-animation: topToBottom 21s linear 0s infinite;
+  animation: topToBottom 21s linear 0s infinite;
+  opacity: 0;
+  // TODO Overflow ?
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.news-slider :nth-child(2) {
+  animation-delay: 7s;
+}
+
+.news-slider :nth-child(3) {
+  animation-delay: 14s;
+}
+
+// Navbar down
+.main-container {
+  // TODO Créer une classe comprenant ces propriétés
+  width: 100%;
+  padding: 0;
+  border-bottom: 1px solid #d3d6d4;
+  background-color: #fff;
+}
+
+.flex-btw-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-logo {
+  display: inline-block;
+  height: 40px;
+  margin-left: 15px;
+  position: relative;
+  text-decoration: none;
+}
+
+.main-logo-img {
+  cursor: pointer;
+  border-style: none;
+  vertical-align: middle;
+  height: 40px;
+}

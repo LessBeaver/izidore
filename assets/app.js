@@ -13,6 +13,8 @@ import './styles/product.scss';
 import './styles/productmedia.scss';
 import './styles/mainheader.scss';
 import './styles/sidebar.scss';
+
+import './styles/feednav.scss';
 // import { Tooltip, Toast, Popover } from 'bootstrap';
 
 // start the Stimulus application

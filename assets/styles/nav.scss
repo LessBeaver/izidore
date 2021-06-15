@@ -22,9 +22,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // /* TODO Enveler la height */
-  // height: 70px;
-  // border-bottom: 1px solid black;
 }
 
 .header-logo {
@@ -48,8 +45,6 @@
   height: 60px;
   overflow: auto;
   float: right;
-  // margin-bottom: 0;
-  // position: relative;
 }
 
 .form-searchbar-container {
@@ -59,16 +54,6 @@
   max-width: 600px;
   margin-top: -1px;
 }
-
-// TODO Comparer/Supprimer
-// .form-searchbar {
-//   display: inline-block;
-//   position: relative;
-//   vertical-align: middle;
-//   box-sizing: border-box;
-//   max-width: 0;
-//   width: 100%;
-// }
 
 .form-searchbar {
   margin-bottom: 0;
@@ -151,8 +136,6 @@
   box-shadow: 0 13px 27px -5px hsla(180, 2%, 90%, 0.01),
     0 8px 16px -8px rgba(211, 214, 212, 0.5);
   outline: none;
-  // display: flex;
-  // align-items: center;
 }
 
 .logo-searchbar i {
@@ -178,6 +161,7 @@
 }
 
 .header-links-container {
+  height: 45px;
   display: block;
 }
 
@@ -198,7 +182,8 @@
 
 // TODO Header DOWN
 
-.nav-header-down {
+.nav-header-down-container {
+  height: 45px;
   width: 100%;
   padding: 0;
   border-bottom: 1px solid #d3d6d4;
@@ -209,20 +194,66 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 45px;
-  // border-top: 1px solid #d3d6d4;
+  max-height: 45px;
+  border-top: 1px solid #d3d6d4;
   padding-left: 15px;
   flex-wrap: wrap;
 }
 
-.nav-items-container {
+.nav-links-container {
   display: flex;
 }
 
-.nav-items-new {
-  margin: 15px;
+.nav-news-container {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: center;
+  line-height: 44px;
+  border-bottom: 2px solid;
+  border-bottom-color: currentcolor;
+  border-color: transparent;
+  margin-bottom: -2px;
+  position: relative;
+}
+
+.label-news {
+  font-family: "Poppins";
+  font-weight: bold;
+  color: #ff6157;
 }
 
 .nav-items {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 44px;
   padding: 15px;
 }
+
+.nav-item {
+  padding: 15px;
+  position: relative;
+  padding: 0;
+}
+
+.nav-item span {
+  padding: 15px;
+}
+
+// .label-normal {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   width: 100%;
+//   padding: 0 15px;
+// }
+
+// .label-selected {
+//   font-family: "Poppins";
+//   font-weight: bold;
+//   visibility: hidden;
+// }
