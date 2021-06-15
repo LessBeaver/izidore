@@ -86,3 +86,120 @@
   vertical-align: middle;
   height: 40px;
 }
+
+.profile {
+  float: right;
+  margin-right: 15px;
+  height: 60px;
+  padding-right: 60px;
+  position: relative;
+}
+
+// TODO Rassembler tout ce qui est : logo/bouton dans app
+.profile-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+}
+
+.logo-container {
+  margin-top: 5px;
+  overflow: hidden;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid #d3d6d4;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  z-index: 1;
+}
+
+.logo-profile {
+  width: 50px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// Etapier
+
+.stepper-container {
+  position: absolute;
+  bottom: -9px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  cursor: pointer;
+  list-style: none;
+  margin: 0;
+  height: 20px;
+  padding: 2.5px 0;
+  float: left;
+  width: 100%;
+}
+
+.stepper-container li {
+  cursor: pointer;
+  list-style: none;
+  width: 33.33%;
+  height: 15px;
+  overflow: visible;
+  float: left;
+  position: relative;
+  text-align: center;
+}
+
+.line {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  height: 2px;
+  transform: translateY(-50%);
+  background-color: #d3d6d4;
+  z-index: -2;
+}
+
+.before {
+  border-radius: 5px 0 0 5px;
+  background-color: #58b58d;
+  left: 0;
+}
+
+.after {
+  right: 0;
+}
+
+.middle {
+  transition: width 0.3s ease-in-out;
+  display: block;
+  width: 0;
+  background-color: #58b58d;
+  left: 50%;
+  z-index: -1;
+  border-radius: 0 5px 5px 0;
+}
+
+.middle-bullet {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 7.5px;
+  background-color: #d3d6d4;
+  position: relative;
+  vertical-align: top;
+  background-color: #58b58d;
+}
+
+.step-label {
+  margin-top: -5px;
+  cursor: pointer;
+  color: #58b58d;
+  font-size: 0.75rem;
+  font-family: "Poppins";
+  font-weight: bold;
+}

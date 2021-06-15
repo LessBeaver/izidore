@@ -31,7 +31,7 @@ class FeedbacksController extends AbstractController
    */
   public function index(): Response
   {
-    // TODO envoyer index plutôt que base
+    // TODO A MODIFIER
     $feedbacks = $this->repository->findAll();
     return $this->render('pages/feed.html.twig', [
       'feedbacks' => $feedbacks,
