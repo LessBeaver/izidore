@@ -32,9 +32,34 @@ class FeedbacksController extends AbstractController
   public function index(): Response
   {
     // TODO A MODIFIER
-    $feedbacks = $this->repository->findAll();
-    return $this->render('pages/feed.html.twig', [
-      'feedbacks' => $feedbacks,
-    ]);
+    // $feedbacks = $this->repository->findAll();
+    // return $this->render('pages/feed.html.twig', [
+    //   'feedbacks' => $feedbacks,
+    // ]);
+    return $this->render('feedbacks/index.html.twig');
+  }
+  /**
+   * @Route("/ajouter-un-avis/rating", name="rating")
+   * @return Response
+   */
+  public function rating(): Response
+  {
+    return $this->render('feedbacks/rating.html.twig');
+  }
+  /**
+   * @Route("/ajouter-un-avis/comment", name="rating")
+   * @return Response
+   */
+  public function comment(): Response
+  {
+    return $this->render('feedbacks/comment.html.twig');
+  }
+  /**
+   * @Route("/ajouter-un-avis/satisfaction", name="rating")
+   * @return Response
+   */
+  public function satisfaction(): Response
+  {
+    return $this->render('feedbacks/satisfaction.html.twig');
   }
 }

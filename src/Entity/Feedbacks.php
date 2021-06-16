@@ -5,6 +5,7 @@ namespace App\Entity;
 use App\Repository\FeedbacksRepository;
 use Doctrine\ORM\Mapping as ORM;
 
+// TODO Rajouter le champ satisfaction
 /**
  * @ORM\Entity(repositoryClass=FeedbacksRepository::class)
  */
