@@ -101,6 +101,23 @@
   margin: 15px;
 }
 
+.form-answer textarea {
+  width: 400px;
+  height: 100px;
+}
+
+.form-answer input {
+  margin: 0 15px;
+}
+
+.form-answer-help {
+  display: flex;
+}
+
+.form-answer-help p {
+  margin: 0 60px;
+}
+
 // FOOTER
 
 .form-footer {

@@ -1,0 +1,72 @@
+{% extends "feedbacks/index.html.twig" %}
+{% block head %}
+	{{ parent() }}
+{% endblock %}
+
+{% block content %}
+
+	<main class="body-container">
+
+		<div class="body-content">
+
+			<div class="left-container">
+				<h2>
+					<span>Votre expérience avec</span>
+					<span class="title-container">
+						<span class="headline-title"></span>
+						<span
+							class="feed-title">
+							{# TODO Emma -> span #}
+							Emma</span>
+					</span>
+				</h2>
+
+				<form action="#" class="feed-form-container">
+					<div class="feed-form-content">
+						<div class="form-question mg15">
+							<h3>
+								Recommanderiez-vous Izidore à votre entourage ?
+							</h3>
+						</div>
+						<div
+							class="form-answer mg15">
+							{# TODO For rate in rating A FAIRE #}
+							<input type="checkbox" name="1" id="">1
+							<input type="checkbox" name="2" id="">2
+							<input type="checkbox" name="3" id="">3
+							<input type="checkbox" name="4" id="">4
+							<input type="checkbox" name="5" id="">5
+							<input type="checkbox" name="6" id="">6
+							<input type="checkbox" name="7" id="">7
+							<input type="checkbox" name="8" id="">8
+							<input type="checkbox" name="9" id="">9
+							<input type="checkbox" name="10" id="">10
+						</div>
+						<div class="form-answer-help">
+							<p>Bof 😒</p>
+							<p>Pourquoi pas 🤔</p>
+							<p>Carrément 😁</p>
+						</div>
+					</div>
+					<div class="form-footer">
+						<a href="" class="return-btn">Étape précédente</a>
+						<button class="save-btn">ENVOYER</button>
+					</div>
+				</form>
+			</div>
+
+			<div class="right-container">
+				<div class="right-content">
+					<div>
+						<div class="info-content">
+							<h1>Aidez-nous à nous améliorer 🦝</h1>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident ratione, quasi eligendi quaerat impedit a eaque labore similique fugiat officia hic exercitationem recusandae iste debitis in nemo veniam, dicta sequi.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</main>
+
+{% endblock %}
