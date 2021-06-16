@@ -38,4 +38,16 @@ class ProductController extends AbstractController
 			'products' => $products,
 		]);
 	}
+
+	/**
+	 * @Route("/voir-les-avis", name="client-feedbacks")
+	 * @return Response
+	 */
+	public function showFeedbacks(): Response
+	{
+		$products = $this->repository->findAll();
+		return $this->render('pages/feedbacks.html.twig', [
+			'products' => $products,
+		]);
+	}
 }
