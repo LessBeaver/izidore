@@ -25,18 +25,38 @@
 					<div class="feed-form-content">
 						<div class="form-question mg15">
 							<h3>
-								Êtes-vous satisfait de votre achat ?
+								Qu'avez-vous pensé de notre izigote Emma ?
 							</h3>
 						</div>
 						{# TODO Mettre input:checkbox à la place #}
 						<div
-							class="form-answer mg15">
+							class="form-answer-icon-container mg15">
 							{# TODO Agrandir smiley #}
-							<checkbox>😍</checkbox>
-							<checkbox>🙂</checkbox>
-							<checkbox>😐</checkbox>
-							<checkbox>😞</checkbox>
-							<checkbox>😠</checkbox>
+							<div class="form-answer-icon">
+								<input type="checkbox" name="happy" id="">
+									<i class="far fa-angry"></i>
+								</input>
+							</div>
+							<div class="form-answer-icon">
+								<input type="checkbox" name="happy" id="">
+									<i class="far fa-frown-open"></i>
+								</input>
+							</div>
+							<div class="form-answer-icon">
+								<input type="checkbox" name="happy" id="">
+									<i class="far fa-meh"></i>
+								</input>
+							</div>
+							<div class="form-answer-icon">
+								<input type="checkbox" name="happy" id="">
+									<i class="far fa-smile"></i>
+								</input>
+							</div>
+							<div class="form-answer-icon">
+								<input type="checkbox" name="happy" id="">
+									<i class="far fa-grin-hearts"></i>
+								</input>
+							</div>
 						</div>
 					</div>
 					<div class="form-footer">
@@ -51,7 +71,17 @@
 					<div>
 						<div class="info-content">
 							<h1>Votre avis nous intéresse 🦝</h1>
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident ratione, quasi eligendi quaerat impedit a eaque labore similique fugiat officia hic exercitationem recusandae iste debitis in nemo veniam, dicta sequi.</p>
+							<h3 class="subtitle-container">
+								<span>Êtes-vous</span>
+								<span class="title-container">
+									<span class="headline-title"></span>
+									<span
+										class="feed-subtitle">
+										{# TODO Emma -> span #}
+										satisfait(e)</span>
+								</span>
+								<span>de votre achat ?</span>
+							</h3>
 						</div>
 					</div>
 				</div>

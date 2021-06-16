@@ -50,6 +50,16 @@
   font-weight: bold;
 }
 
+.subtitle-container {
+  font-weight: normal;
+}
+
+.feed-subtitle {
+  position: relative;
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
 // RIGHT CONTAINER
 
 .right-container {
@@ -79,6 +89,10 @@
   background-color: #fff;
 }
 
+.info-content h1 {
+  margin: 30px auto;
+}
+
 // TODO Mediaqueries
 // RATING
 
@@ -101,12 +115,31 @@
   margin: 15px;
 }
 
+.form-answer-icon-container {
+  display: flex;
+}
+
+.form-answer-icon {
+  margin: 0 30px;
+}
+
+.form-answer-icon i {
+  cursor: pointer;
+  margin: -20px;
+  font-size: xx-large;
+}
+
+.form-answer-icon input {
+  display: none;
+}
+
 .form-answer textarea {
   width: 400px;
   height: 100px;
 }
 
 .form-answer input {
+  cursor: pointer;
   margin: 0 15px;
 }
 
