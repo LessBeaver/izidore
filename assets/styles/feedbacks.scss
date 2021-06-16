@@ -7,6 +7,7 @@
   padding: 15px 0 !important;
   padding: auto 0 !important;
   box-sizing: border-box;
+  font-family: "Poppins";
 }
 
 .body-content {
@@ -27,7 +28,6 @@
 .left-container h2 {
   margin: 30px 0 45px;
   // TODO Normalement déjà compris dans app
-  font-size: 1.75rem;
 }
 
 .title-container {
@@ -46,6 +46,8 @@
 
 .feed-title {
   position: relative;
+  font-size: 1.75rem;
+  font-weight: bold;
 }
 
 // RIGHT CONTAINER
@@ -129,8 +131,8 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-family: "Poppins";
   font-weight: bold;
+  font-family: "Poppins";
   filter: drop-shadow(0 0 0.25rem #81c7a9);
 }
 
@@ -165,83 +167,14 @@
   max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-family: "Poppins";
   font-weight: bold;
   filter: drop-shadow(0 0 0.25rem #ffd932);
 }
 
 .save-btn::after {
   content: "\f00c";
-  font-family: FontAwesome;
+  font-family: "FontAwesome";
   display: inline;
   font-size: 17px;
   padding-left: 10px;
 }
-
-// .form-footer {
-//   display: flex;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-//   width: 100%;
-//   background-color: #fff;
-//   padding: 15px 45px;
-//   z-index: 91;
-//   box-shadow: 0 -5px 5px -7px rgba(0, 0, 0, 0.5);
-//   margin-top: 60px;
-// }
-
-// .return-container {
-//   position: relative;
-//   flex: 1 1 100%;
-//   text-align: left;
-//   margin-bottom: 0;
-// }
-
-// .return-btn {
-//   text-align: center;
-//   background-color: #e5e6e6;
-//   border-color: #e5e6e6;
-//   text-decoration: none;
-//   outline: none;
-//   color: #29362e;
-//   display: inline-block;
-//   line-height: 40px;
-//   height: 45px;
-//   padding: 0 22.5px;
-//   font-size: 1rem;
-//   cursor: pointer;
-//   max-width: 100%;
-//   overflow: hidden;
-//   text-overflow: ellipsis;
-//   white-space: nowrap;
-//   font-family: "Poppins";
-//   // TODO SemiBold === font weight ??
-//   font-weight: bold;
-//   box-shadow: 1px 1px 3px #f7f7f7;
-// }
-
-// .return-btn::before {
-//   font-family: "FontAwesome";
-//   display: inline-block;
-//   font-size: 1.25rem;
-//   content: "\f104";
-//   padding-right: 10px;
-//   cursor: pointer;
-//   white-space: nowrap;
-//   color: #29362e;
-//   line-height: 40px;
-// }
-
-// .save-container {
-//   margin-bottom: 0;
-//   flex: 1 1 100%;
-//   position: relative;
-//   text-align: right;
-// }
-
-// .save-btn {
-//   cursor: pointer;
-//   outline: none;
-//   text-align: center;
-// }
