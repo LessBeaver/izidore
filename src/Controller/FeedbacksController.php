@@ -47,7 +47,7 @@ class FeedbacksController extends AbstractController
     return $this->render('feedbacks/rating.html.twig');
   }
   /**
-   * @Route("/ajouter-un-avis/comment", name="rating")
+   * @Route("/ajouter-un-avis/comment", name="comment")
    * @return Response
    */
   public function comment(): Response
@@ -55,7 +55,7 @@ class FeedbacksController extends AbstractController
     return $this->render('feedbacks/comment.html.twig');
   }
   /**
-   * @Route("/ajouter-un-avis/satisfaction", name="rating")
+   * @Route("/ajouter-un-avis/satisfaction", name="satisfaction")
    * @return Response
    */
   public function satisfaction(): Response

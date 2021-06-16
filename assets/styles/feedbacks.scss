@@ -1,0 +1,247 @@
+// LEFT CONTAINER
+
+.body-container {
+  // TODO Mettre cette classe dans app et rassembler les .body-container
+  display: block;
+  width: 100%;
+  padding: 15px 0 !important;
+  padding: auto 0 !important;
+  box-sizing: border-box;
+}
+
+.body-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.left-container {
+  min-height: 75vh;
+  max-width: 800px !important;
+  position: relative;
+  width: 100%;
+  margin: auto;
+  padding: 45px 30px 30px 30px !important;
+}
+
+.left-container h2 {
+  margin: 30px 0 45px;
+  // TODO Normalement déjà compris dans app
+  font-size: 1.75rem;
+}
+
+.title-container {
+  position: relative;
+}
+
+.headline-title {
+  right: -1px;
+  left: -1px;
+  background-color: #81c7a9;
+  opacity: 0.2;
+  position: absolute;
+  bottom: 0;
+  top: 60%;
+}
+
+.feed-title {
+  position: relative;
+}
+
+// RIGHT CONTAINER
+
+.right-container {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: #f7f7f7;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.right-content {
+  padding: 15px 30px;
+}
+
+.right-content div {
+  margin: 30px 0;
+}
+
+.info-content {
+  box-shadow: 0 13px 27px -5px hsla(180, 2%, 90%, 0.01),
+    0 8px 16px -8px rgba(211, 214, 212, 0.5);
+  font-size: 0.85rem;
+  padding: 30px;
+  border-radius: 0.25rem;
+  background-color: #fff;
+}
+
+// TODO Mediaqueries
+// RATING
+
+.feed-form-container {
+  width: 80%;
+  padding: 30px;
+  margin: 90px auto;
+  background-color: #81c7a957;
+  border-radius: 7.5px;
+}
+
+.feed-form-content {
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+  align-items: center;
+}
+
+.mg15 {
+  margin: 15px;
+}
+
+// FOOTER
+
+.form-footer {
+  display: flex;
+  // flex-direction: row;
+  // flex-wrap: wrap;
+  padding: 15px;
+  margin: 30px auto;
+  width: 80%;
+  justify-content: space-evenly;
+}
+
+.return-btn {
+  -webkit-appearance: none;
+  border-radius: 22.5px;
+  text-align: center;
+  background-color: #e5e6e6;
+  border: 2px solid #e5e6e6;
+  outline: none;
+  color: #29362e;
+  display: inline-block;
+  line-height: 40px;
+  height: 45px;
+  padding: 0 22.5px;
+  font-size: 1rem;
+  cursor: pointer;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: "Poppins";
+  font-weight: bold;
+  filter: drop-shadow(0 0 0.25rem #81c7a9);
+}
+
+.return-btn::before {
+  font-family: "FontAwesome";
+  display: inline;
+  font-size: 1.25rem;
+  content: "\f104";
+  padding-right: 10px;
+  cursor: pointer;
+  white-space: nowrap;
+  color: #29362e;
+  line-height: 40px;
+}
+
+.save-btn {
+  // TODO yellow-btn # yellow-drop-btn
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none;
+  border-radius: 22.5px;
+  border: 2px solid #ffd932;
+  background-color: #ffd932;
+  color: #29362e;
+  display: inline-block;
+  line-height: 40px;
+  height: 45px;
+  padding: 0 22.5px;
+  font-size: 1rem;
+  cursor: pointer;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "Poppins";
+  font-weight: bold;
+  filter: drop-shadow(0 0 0.25rem #ffd932);
+}
+
+.save-btn::after {
+  content: "\f00c";
+  font-family: FontAwesome;
+  display: inline;
+  font-size: 17px;
+  padding-left: 10px;
+}
+
+// .form-footer {
+//   display: flex;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   width: 100%;
+//   background-color: #fff;
+//   padding: 15px 45px;
+//   z-index: 91;
+//   box-shadow: 0 -5px 5px -7px rgba(0, 0, 0, 0.5);
+//   margin-top: 60px;
+// }
+
+// .return-container {
+//   position: relative;
+//   flex: 1 1 100%;
+//   text-align: left;
+//   margin-bottom: 0;
+// }
+
+// .return-btn {
+//   text-align: center;
+//   background-color: #e5e6e6;
+//   border-color: #e5e6e6;
+//   text-decoration: none;
+//   outline: none;
+//   color: #29362e;
+//   display: inline-block;
+//   line-height: 40px;
+//   height: 45px;
+//   padding: 0 22.5px;
+//   font-size: 1rem;
+//   cursor: pointer;
+//   max-width: 100%;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   white-space: nowrap;
+//   font-family: "Poppins";
+//   // TODO SemiBold === font weight ??
+//   font-weight: bold;
+//   box-shadow: 1px 1px 3px #f7f7f7;
+// }
+
+// .return-btn::before {
+//   font-family: "FontAwesome";
+//   display: inline-block;
+//   font-size: 1.25rem;
+//   content: "\f104";
+//   padding-right: 10px;
+//   cursor: pointer;
+//   white-space: nowrap;
+//   color: #29362e;
+//   line-height: 40px;
+// }
+
+// .save-container {
+//   margin-bottom: 0;
+//   flex: 1 1 100%;
+//   position: relative;
+//   text-align: right;
+// }
+
+// .save-btn {
+//   cursor: pointer;
+//   outline: none;
+//   text-align: center;
+// }
